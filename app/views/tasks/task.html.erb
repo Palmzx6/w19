@@ -1,0 +1,8 @@
+<div id="task_<%= task.id %>">
+  <%= form_with(model: task, data: { turbo_frame: "task_#{task.id}" }, method: :patch) do |form| %>
+    <%= form.check_box :completed, data: { action: "change->task#toggle" } %>
+    <%= form.label :title, task.title, class: ("completed" if task.completed) %>
+  <% end %>
+  
+  <%= button_to "Delete", [task.category, task], method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+</div>

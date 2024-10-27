@@ -1,0 +1,11 @@
+<div id="category_<%= category.id %>">
+  <h2><%= category.name %></h2>
+  <%= form_with(model: [category, Task.new], data: { turbo_frame: "tasks_#{category.id}" }) do |form| %>
+    <%= form.text_field :title, placeholder: "Add new task" %>
+    <%= form.submit "Add Task" %>
+  <% end %>
+
+  <div id="tasks_<%= category.id %>">
+    <%= render category.tasks %>
+  </div>
+</div>
