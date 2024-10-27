@@ -1,0 +1,19 @@
+current directory: /home/patarakot/todo_app/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+/home/patarakot/.rbenv/versions/3.0.2/bin/ruby -I /home/patarakot/.rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20241027-95414-nnk0bj.rb extconf.rb
+creating Makefile
+
+current directory: /home/patarakot/todo_app/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= clean
+
+current directory: /home/patarakot/todo_app/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\=
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/patarakot/todo_app/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20241027-95414-qpyebk/byebug
